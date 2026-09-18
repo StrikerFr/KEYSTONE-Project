@@ -1,0 +1,18 @@
+# KEYSTONE Field Service Management Platform - Robots.txt
+User-agent: *
+Allow: /
+Allow: /dashboard
+Allow: /work-orders
+Allow: /service-requests
+Allow: /technicians
+Allow: /customers
+Allow: /assets
+Allow: /inventory
+Allow: /schedule
+Allow: /reports
+Allow: /sla
+
+Disallow: /api/
+Disallow: /actuator/
+
+Sitemap: https://keystone-fsm.com/sitemap.xml

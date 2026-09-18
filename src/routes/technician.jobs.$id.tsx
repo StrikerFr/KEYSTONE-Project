@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { TechnicianPortal } from "@/components/keystone/portals";
+export const Route=createFileRoute("/technician/jobs/$id")({head:({params})=>({meta:[{title:`${params.id} Technician Job | KEYSTONE`},{name:"description",content:"Technician field execution workspace with job actions."},{property:"og:title",content:`${params.id} Technician Job | KEYSTONE`},{property:"og:description",content:"Field execution workspace."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:()=> <TechnicianPortal detail/>});

@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { CustomerPortal } from "@/components/keystone/portals";
+export const Route=createFileRoute("/customer/work-orders")({head:()=>({meta:[{title:"Customer Work Orders | KEYSTONE"},{name:"description",content:"Track active and completed customer work orders."},{property:"og:title",content:"Customer Work Orders | KEYSTONE"},{property:"og:description",content:"Track active and completed customer work orders."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:()=><CustomerPortal page="work-orders"/>});

@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { CustomerPortal } from "@/components/keystone/portals";
+export const Route=createFileRoute("/customer/dashboard")({head:()=>({meta:[{title:"Customer Dashboard | KEYSTONE"},{name:"description",content:"Customer service activity, requests, assets, and work status."},{property:"og:title",content:"Customer Dashboard | KEYSTONE"},{property:"og:description",content:"Customer service activity, requests, assets, and work status."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:()=><CustomerPortal/>});
